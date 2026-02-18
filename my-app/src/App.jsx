@@ -1,6 +1,7 @@
-import { Fragment, useEffect } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import MainHeader from './components/main_header/MainHeader'
 import Login from './components/Login/Login'
+import '/App.css'
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(() => {
