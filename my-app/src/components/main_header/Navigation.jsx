@@ -1,3 +1,4 @@
+import Buttons from '../UI/Buttons'
 import './Navigation.css'
 
 const Navigation = () => {
@@ -10,6 +11,11 @@ const Navigation = () => {
                 <li>
                     <a href="/admin">Admin</a>
                 </li>
+                {props.loggedIn && (
+                    <li>
+                        <Buttons onClick={props.onLogout}>Logout</Buttons>
+                    </li>
+                )}
             </ul>
         </nav>
     )

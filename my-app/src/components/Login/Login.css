@@ -2,6 +2,7 @@
     margin: 2rem auto;
     padding: 2rem;
     width: 90%;
+    max-width: 40rem;
 }
 .control {
     margin: 1rem 0;
@@ -15,15 +16,24 @@
 .control label{
     flex: 1;
     font-weight: bold;
-    color: rgb(40, 38, 38);
+    color: #464646;
     margin-bottom: 0.5rem;
 }
 .control input{
     flex: 3;
     font: inherit;
     padding: 0.35rem 0.35rem;
-    border: 1px solid #ccc;
+    border: 1px solid #4f005f;
     border-radius: 6px;
+}
+.control input:focus{
+    outline: none;
+    border-color: #4f005f;
+    background: #f6dbfc;
+}
+.control.invalid input{
+    border-color: red;
+    background: #fbdada;
 }
 .actions{
     text-align: center;
